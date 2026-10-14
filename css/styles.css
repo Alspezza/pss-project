@@ -1,0 +1,150 @@
+:root {
+    --main-color: rgb(145, 145, 247);
+    --akcent-color: rgb(69, 69, 179);
+    --bg-color: rgb(173, 250, 202);
+
+    --base-radius: 8px;
+    --padding: 10px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: var(--main-color);                  
+    background-color: var(--bg-color);         
+    line-height: 1.6;                         
+    margin: 10px;                                 
+}
+
+header, nav, main, footer {
+    border: 2px solid var(--akcent-color); 
+    padding: var(--padding);               
+    border-radius: var(--base-radius);    
+    margin-bottom: var(--padding);         
+    background-color: #ffffff;             
+}
+
+.text-accent {
+    color: var(--akcent-color);
+    font-weight: bold;
+}
+
+#rules {
+    background-color: #f0f0ff;
+    padding: 10px;
+}
+
+nav a {
+    color: var(--akcent-color);
+    text-decoration: none;
+}
+
+nav > ul > li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    opacity: 0.8;
+}
+
+.form-input-field {
+    border: 1px solid var(--main-color);
+    border-radius: 4px;
+    padding: 6px;
+}
+
+.img-card {
+    width: 350px;
+    height: auto;
+}
+
+.img-logo {
+    width: 180px;
+    height: auto;
+}
+
+input[type="text"] {
+    border: 1px solid var(--main-color);
+    border-radius: 4px;
+}
+
+form label {
+    font-weight: bold;
+    color: var(--main-color);
+    margin-right: 5px;
+}
+
+form fieldset {
+    border: 2px dashed var(--main-color);
+    border-radius: 6px;
+    padding: 10px;
+    margin: 15px 0;
+}
+
+form fieldset legend {
+    padding: 0 10px;
+    font-weight: bold;
+    color: var(--akcent-color);
+}
+
+form button {
+    padding: 8px 16px;
+    border: 1px solid var(--main-color);
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+form button[type="submit"] {
+    background-color: var(--akcent-color);
+    color: #ffffff;
+}
+
+form button[type="reset"] {
+    background-color: #f0f0f0;
+    color: var(--main-color);
+}
+
+input[type="email"]:focus,
+form input:focus, 
+form select:focus, 
+form textarea:focus {
+    outline: 3px solid var(--akcent-color);
+    outline-offset: 1px;
+    background-color: #fafafa;
+}
+
+form textarea {
+    width: calc(100% - 20px);
+    max-width: 500px;
+    height: 80px;
+}
+
+video {
+    margin-bottom: min(5vh, 30px);
+    max-width: 1000px;
+}
+
+button {
+    border-radius: 0px;
+}
+
+form button {
+    border-radius: 4px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 700px;
+}
+
+table, th, td {
+    border: 1px solid var(--main-color);
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+}
